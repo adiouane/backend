@@ -1,0 +1,37 @@
+
+
+html,
+body {
+  padding: 0;
+    margin: 0;
+    margin: 0rem 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f1f1;
+    --primary: #2d2d2d;
+    --secondary: #535353;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* mine */
+h2{
+  font-size: 1rem;
+  color: var(--primery);
+}
+
+h3{
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+p{
+  line-height: 150%;
+}
+/* end mine */
+ a {
+  color: inherit;
+  text-decoration: none;
+}
