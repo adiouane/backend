@@ -4,8 +4,8 @@ export const NavStyle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
+    margin: 0 0 2rem 0;
     a{
         text-decoration: none;
         color: black;
@@ -15,6 +15,9 @@ export const NavStyle = styled.div`
     svg{
         font-size: 2rem;
         cursor: pointer;
+    }
+    h1{
+        font-size: 1.5rem;
     }
 `;
 

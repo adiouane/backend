@@ -5,7 +5,6 @@ export const ProductStyled = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;  
-    margin: 0.75rem ;
     img{
         width: 100%;
         padding: 1.5rem;

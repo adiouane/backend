@@ -1,6 +1,7 @@
 import styled from "styled-components";
+const {motion} = require('framer-motion');
 
-export const CartWrapper = styled.div`
+export const CartWrapper = styled(motion(motion.div))`
 // this cart wrapper CartWrapper
     position: fixed;
     top: 0;
@@ -11,17 +12,17 @@ export const CartWrapper = styled.div`
     z-index: 100;
     display: flex;
     justify-content: flex-end;
-    /* display: none; */
+    transform:none;
 
 `;
 
-export const CartStyle = styled.div`
+export const CartStyle = styled(motion.div)`
     top: 0;
     right: 0;
     background: #f1f1f1;
-    width: 35%;
+    width: 40%;
     height: 100%;
-    padding: 20px 40px;
+    padding: 0 40px;
     overflow-y: auto;
     position: relative;
     h1{
@@ -29,50 +30,47 @@ export const CartStyle = styled.div`
     }
 `;
 
-export const OrderCart = styled.div`
+export const OrderCart = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
-    /* border-bottom: 1px solid #ccc; */
     border-radius: 15px;
     overflow: hidden;
     background: white;
-    margin: 2rem 1rem;
-    padding: 2rem 1rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
     img{
         width: 100px;
         height: 100px;
         object-fit: cover;
-        margin-right:4rem;
-        margin-left: 1rem;
+        margin-right:2rem;
+        margin-left: 2rem;
     }
     h2{
         font-size: 15px;
     }
     h3{
         font-size: 15px;
-        margin: 0.5rem 0
     }
 
 `;
 
-export const EmptyCart = styled.div`
+export const EmptyCart = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     flex-direction: column;
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 2rem 0;
     }
 `;
 
-export const Quantityorder = styled.div`
- display: flex;
+export const Quantityorder = styled(motion.div)`
+    display: flex;
     align-items: center;
-    margin: 1rem 0rem;
+    margin: 1rem;
     p {
         width: 1rem;
         text-align: center;
@@ -91,18 +89,14 @@ export const Quantityorder = styled.div`
     svg{
         color: #494949;
     }
-    //hover effect
-    /* &:hover{
-        cursor: pointer;
-        transform: scale(1.1);
-    } */
 `;
 
-export const TotalPricestyle = styled.div`
+export const TotalPricestyle = styled(motion.div)`
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
     h2{
         font-size: 1.3rem;
         margin: 1rem 0;
@@ -115,9 +109,13 @@ export const TotalPricestyle = styled.div`
     button{
         background: var(--primary);
         color: white;
-        padding: 0.7rem 13rem 0.7rem 13rem;
+        padding: 0.7rem 12.2rem 0.7rem 12.2rem;
         border: none;
         font-size: 1rem;
         margin: 1rem 0;
+        cursor:pointer;
     }
 `;
+
+
+export const Cards = styled(motion.div)``;
